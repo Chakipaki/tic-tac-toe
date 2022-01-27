@@ -1,4 +1,5 @@
 # Tic-tac-toe
+https://chakipaki.github.io/tic-tac-toe/dist/10-components/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
