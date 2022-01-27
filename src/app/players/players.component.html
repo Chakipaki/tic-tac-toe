@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<ul class="players__list">
+    <li class="player">
+        <div class="player__attributes bg__user1">
+            <svg-icon-sprite
+                [src]="'assets/sprites/sprite.svg#cross'"
+                class="player__icon player__icon1"
+                [width]="'36'"
+                [height]="'36'"
+                viewBox="0 0 36 36"
+            ></svg-icon-sprite>
+            <p class="player__name">{{playerState[0].name}}</p>
+        </div>
+        <div class="player__score bg__user1">{{playerState[0].score}}</div>
+    </li>
+    <li class="player">
+        <div class="player__attributes bg__user2">
+            <svg-icon-sprite
+                [src]="'assets/sprites/sprite.svg#ellipse'"
+                class="player__icon player__icon2"
+                [width]="'41'"
+                [height]="'42'"
+                viewBox="0 0 41 42"
+            ></svg-icon-sprite>
+            <p class="player__name">{{playerState[1].name}}</p>
+        </div>
+        <div class="player__score bg__user2">{{playerState[1].score}}</div>
+    </li>
+</ul>

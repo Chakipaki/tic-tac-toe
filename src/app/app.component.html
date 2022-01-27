@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<app-header class="header"></app-header>
+<app-who-turn class="who-turn" [whoTurn]="currentPlayer"></app-who-turn>
+<div class="who-won" *ngIf="winner">
+    {{winner}}
+</div>
+<div class="game__container">
+    <div class="players-actions__container">
+        <app-players class="players__container" [playerState]="players"></app-players>
+        <app-game-actions class="actions__container" (resetState)="resetStorage()" (resetGameState)="resetGameState()"></app-game-actions>
+    </div>
+    <app-game class="game" [gameState]="state" (changeBlock)="changeGameBlock($event[0], $event[1])"></app-game>
+</div>
